@@ -15,14 +15,14 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  listaUsuários = [
+  listaUsuarios = [
     {username: "gustarz_", password: "248"},
     {username: "leo_rafa", password: "842"},
     {username: "sant_otavio", password: "428"}
   ]
   
   login(){
-
+    localStorage.setItem('USER', this.listaUsuarios[0].username);
   }
 
 
