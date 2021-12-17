@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   ]
   
   login(){
+    
     localStorage.setItem('USER', this.listaUsuarios[0].username);
   }
 
