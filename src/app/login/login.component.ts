@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-login',
@@ -6,11 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  user ='';
+  pass='';
   
   
-  constructor() { }
-  @Input() userName;
-  @Input() password;
+  constructor(private route: Router) { }
+  
 
   ngOnInit() {
   }
@@ -22,9 +25,15 @@ export class LoginComponent implements OnInit {
   ]
   
   login(){
-    
-    localStorage.setItem('USER', this.listaUsuarios[0].username);
-  }
+    for(let i of this.listaUsuarios){
+      if(i.username == this.user && i.password == this.pass){
+        localStorage.setItem('USER: ', this.user);
+        localStorage.setItem('PASS: ', this.pass);
+        this.route.navigate(['/main/'])
+      }
+    }
+
+    }
 
 
 }

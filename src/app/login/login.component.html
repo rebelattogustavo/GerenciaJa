@@ -1,6 +1,6 @@
-<input placeholder="Username" type="text">
+<input placeholder="Username" type="text" [(ngModel)]="user">
 <br>
-<input placeholder="Password" type="text">
+<input placeholder="Password" type="password" [(ngModel)]="pass">
 <div>
   <button (click)="login()">Entrar</button>
   <button>Log Out</button>
