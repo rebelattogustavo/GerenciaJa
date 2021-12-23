@@ -1,11 +1,13 @@
 <div class="div-geral">
-  <div>
-    <input placeholder="Username" type="text" [(ngModel)]="user">
-  </div>
-  <div>
-    <input placeholder="Password" type="password" [(ngModel)]="pass">
-  </div>
-  <div id="div-botao">
-    <button (click)="login()" >Entrar</button>
+  <div class="div-back">
+    <div>
+      <input placeholder="Username" type="text" [(ngModel)]="user" class="inputs">
+    </div>
+    <div>
+      <input placeholder="Password" type="password" [(ngModel)]="pass" class="inputs">
+    </div>
+    <div id="div-botao">
+      <button (click)="login()" >Entrar</button>
+    </div>
   </div>
 </div>

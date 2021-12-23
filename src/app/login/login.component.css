@@ -2,14 +2,18 @@
     width: 100%;
     display: grid;
     justify-content: center;
-    align-items: center;
     margin-top: 20px;
 }
 
-.div-back{
+.div-backs{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: aqua;
-    width: 140%;
+    width: 100%;
+}
+
+.inputs{
+    margin-bottom: 15px;
 }
 
 #div-botao{
