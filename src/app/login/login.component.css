@@ -1,0 +1,18 @@
+.div-geral{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.div-back{
+    align-items: center;
+    background-color: aqua;
+    width: 140%;
+}
+
+#div-botao{
+    margin-left: auto;
+    margin-right: auto;
+}

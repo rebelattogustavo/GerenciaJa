@@ -1,7 +1,11 @@
-<input placeholder="Username" type="text" [(ngModel)]="user">
-<br>
-<input placeholder="Password" type="password" [(ngModel)]="pass">
-<div>
-  <button (click)="login()">Entrar</button>
-  <button>Log Out</button>
+<div class="div-geral">
+  <div>
+    <input placeholder="Username" type="text" [(ngModel)]="user">
+  </div>
+  <div>
+    <input placeholder="Password" type="password" [(ngModel)]="pass">
+  </div>
+  <div id="div-botao">
+    <button (click)="login()" >Entrar</button>
+  </div>
 </div>
