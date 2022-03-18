@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { TelaPrincipalModule } from './tela-principal/tela-principal.module';
 import { MainComponent } from './tela-principal/main/main.component';
+import CheckLogged from './checkLogged.canActivate';
 
 
 
@@ -30,7 +31,7 @@ import { MainComponent } from './tela-principal/main/main.component';
     FormsModule,
     TelaPrincipalModule
   ],
-  providers: [],
+  providers: [CheckLogged],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
